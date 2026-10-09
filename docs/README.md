@@ -11,19 +11,20 @@ repositories carry the work:
 - this repository, which holds the data release under `data/` and the verifier
   that runs on it.
 
-`VERIFICATION.md` is the authors' run of this verifier on the release: the
-reranker scores computed on their cluster (the GPU stage) and the reports,
-comparison and verdict from this version of the verifier. Earlier runs are
-kept in `verification_history/`.
+`VERIFICATION.md` is a clean-install run of this verifier from the public
+repositories: a fresh venv, the package from its GitHub tag, the verifier and
+the data release cloned from GitHub, the reranker downloaded into a fresh
+cache, scoring on the authors' Slurm cluster (A100, H100 and H200 GPUs), and
+the reports, comparison and verdict from this version of the verifier. Earlier
+runs are kept in `verification_history/`.
 
 **Verdict: PASSED, 109 of 109 gated checks.** Every overlap, baseline, gap, coarser-cut, split-half, repeat-count and raw-score check lands within tolerance, and the paper's permutation test (gate p < 0.01) passes in all twelve cells on the rerun and on the authors' recorded scores. The finer picture: on the recorded scores every cell has p < 1e-4; on the rerun eleven cells have p < 1e-4 and Metaculus at the broad level with 5 cruxes a side has p = 0.0019, which would fail a gate of p < 0.001. `VERIFICATION.md` has every row.
 
-The recorded run used the authors' cluster, with torch and transformers from
-the lab's conda environment (versions as recorded in `scripts/authors_cluster/`,
-which names the environment but pins no versions). No run on independent
-hardware or from a clean install has been made yet; the scripts and this
-README are what a reader needs to make one. Paths inside `VERIFICATION.md`
-are the authors' cluster paths.
+The run used the authors' cluster but nothing of the authors' environment:
+every dependency came from PyPI (torch 2.14.1+cu130, transformers 5.19.0) and
+the model from the Hugging Face Hub, as a reader's run would. Paths inside
+`VERIFICATION.md` are that run's scratch paths. The Slurm scripts that made
+it are in `scripts/clean_install/`.
 
 **Scope.** The verifier checks the paper's headline analyses only: overlap,
 permutation baseline and gap for both datasets at each of the three
@@ -178,9 +179,11 @@ value, the rerun's, their difference and the tolerance. The exit status is 0
 only if every gated check passed. The figures go to `WORK/figures/`, with the
 same figures drawn from the paper's numbers in `WORK/figures/paper/`.
 
-**On the authors' cluster.** The Slurm jobs that produced `VERIFICATION.md`
-are in `scripts/authors_cluster/` (its README lists them). They are the
-record of that run, not a recipe: paths, partitions and the lab conda
+**On a Slurm cluster.** `scripts/clean_install/` holds the three jobs of the
+clean-install run (install and tests, the GPU array, the CPU verdict); they
+should run on most Slurm sites after editing the partition and log paths.
+`scripts/authors_cluster/` holds the jobs of the earlier run from the authors'
+internal copies. Those are the record of that run, not a recipe: paths, partitions and the lab conda
 environment are site specific, and each job sources `common.sh` by its
 absolute cluster path, because `sbatch` runs a spooled copy of the script.
 
