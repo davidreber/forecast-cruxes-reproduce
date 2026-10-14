@@ -7,7 +7,10 @@ v0.1.0, with the paper's test at 10,000 draws and the gate p < 0.01. The
 release directory named below is the authors' copy of the data release: its
 dataset files and recorded scores are byte-identical to `forecast-cruxes-data`
 v1.0.0 (`datasets/` and `provenance/scores/`); that repository's MANIFEST.json
-also lists its LICENSE, README and REDISTRIBUTION files.
+also lists its LICENSE, README and REDISTRIBUTION files. That release now
+ships in this repository under `data/`, where two documentation strings have since been
+corrected to name the March Madness extractor gpt-5.4-nano, as the run log and the paper
+record. No dataset file and no recorded score changed, and the manifest was resealed.
 
 **The gate.** The paper's test is gated at p < 0.01. On the authors' recorded
 scores (the numbers the paper prints) every one of the twelve cells gives

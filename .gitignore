@@ -3,5 +3,5 @@ __pycache__/
 build/
 dist/
 .pytest_cache/
-# Work directories of local reruns. The data artifact is never in this repository.
+# Work directories of local reruns. The data release itself is tracked, under data/.
 work/

@@ -2,7 +2,8 @@
 
 Spec version 2, 2026-09-24. It replaces version 1 (2026-09-23, then called
 the data artifact). The data release built to it was released on 2026-10-08
-as https://github.com/davidreber/forecast-cruxes-data.
+as https://github.com/davidreber/forecast-cruxes-data. It now ships in this
+repository under `data/`.
 
 ## Three parts
 

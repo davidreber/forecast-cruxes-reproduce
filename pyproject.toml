@@ -20,9 +20,9 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/davidreber/forecast-cruxes-verify"
+Homepage = "https://github.com/davidreber/forecast-cruxes-reproduce"
 Package = "https://github.com/davidreber/forecast-cruxes"
-"Data release" = "https://github.com/davidreber/forecast-cruxes-data"
+"Data release" = "https://github.com/davidreber/forecast-cruxes-reproduce/tree/main/data"
 
 [project.optional-dependencies]
 gpu = ["forecast-cruxes[gpu] @ git+https://github.com/davidreber/forecast-cruxes@v0.4.0"]
