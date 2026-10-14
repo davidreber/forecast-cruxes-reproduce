@@ -5,8 +5,8 @@ repository that know our internal directory layout, and ``verify`` never
 imports them. A reviewer receives what this writes, never what it reads.
 
     python artifact_builder/build_release.py \\
-        --out /net/projects/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_release \\
-        --provenance-out /net/projects/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_provenance
+        --out <project>/Data/runs/refactor_proposal_4_release \\
+        --provenance-out <project>/Data/runs/refactor_proposal_4_provenance
 
 Everything under ``Data/`` is opened read only. Neither output directory may
 exist; the build refuses to write into one that does, and it checks every
@@ -44,7 +44,7 @@ from cruxes.dedupe import DEDUPE_RULE, dedupe_premises
 
 from legacy import LEGACY_SEED_LABELS, legacy_selection, sha256
 
-PROJECT = Path("/net/projects/veitch/forecast-cruxes")
+PROJECT = Path("<project>")
 RUNS = PROJECT / "Data" / "runs"
 PROMPTS = PROJECT / "Data" / "prompts" / "reranker_prompts.json"
 

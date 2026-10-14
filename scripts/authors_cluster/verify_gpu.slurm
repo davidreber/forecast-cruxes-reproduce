@@ -11,8 +11,8 @@
 #SBATCH --array=0-9
 #SBATCH --exclude=m001,m002
 #SBATCH --kill-on-invalid-dep=yes
-#SBATCH --output=/net/projects/veitch/forecast-cruxes/slurm_logs/verify_gpu_%A_%a.out
-#SBATCH --error=/net/projects/veitch/forecast-cruxes/slurm_logs/verify_gpu_%A_%a.err
+#SBATCH --output=<project>/slurm_logs/verify_gpu_%A_%a.out
+#SBATCH --error=<project>/slurm_logs/verify_gpu_%A_%a.err
 #
 # Cost: $0. One local GPU per task, the pinned 8B reranker, no API.
 #
@@ -23,7 +23,7 @@
 # score every fourth of its questions. Caches go to the work directory; a
 # cache is never overwritten, so the tasks can share it.
 
-source /net/projects/veitch/forecast-cruxes/forecast-cruxes-verify/scripts/authors_cluster/common.sh
+source <project>/forecast-cruxes-verify/scripts/authors_cluster/common.sh
 set -eo pipefail
 
 RUNS=(

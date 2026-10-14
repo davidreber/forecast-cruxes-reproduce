@@ -719,7 +719,7 @@
   }
  },
  "source": {
-  "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_dedup/dedup_manifest.json",
+  "path": "<project>/Data/runs/march_madness_objects59_dedup/dedup_manifest.json",
   "sha256": "f3b5b9f59179bca4a2b18e0ba4a7d7d4fa8294030b05324a53743e5308bb48f5"
  }
 }

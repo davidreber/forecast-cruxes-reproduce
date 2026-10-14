@@ -67,35 +67,35 @@
  "noise_reference": "noise_reference/introspected.json is an independent second introspection sample with the same model, prompts and schema; the verifier's tolerances are measured from runs on it",
  "provenance": {
   "introspected": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59/apriori/apriori_contrasts_merged.json",
+   "path": "<project>/Data/runs/march_madness_objects59/apriori/apriori_contrasts_merged.json",
    "sha256": "2145f30aaf8d4df1ccee15b93a79e1fe57efe9d30c3522ce57845baf41cbb5ce"
   },
   "introspection_metadata": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59/apriori/apriori_metadata_2026-09-21T22-08-29.json",
+   "path": "<project>/Data/runs/march_madness_objects59/apriori/apriori_metadata_2026-09-21T22-08-29.json",
    "sha256": "5210000a251f05cb3a4a9e862361747a8641dbd4a190835fc0210ad24da84192"
   },
   "introspected_noise_reference": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_rep2/apriori/apriori_contrasts_merged.json",
+   "path": "<project>/Data/runs/march_madness_objects59_rep2/apriori/apriori_contrasts_merged.json",
    "sha256": "4742a1fc9e1a511cf640cf2197c55f2cdb65f55c62ee0f3a2d1b5d79ba12b8cc"
   },
   "introspection_metadata_noise_reference": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_rep2/apriori/apriori_metadata_2026-09-22T13-28-37.json",
+   "path": "<project>/Data/runs/march_madness_objects59_rep2/apriori/apriori_metadata_2026-09-22T13-28-37.json",
    "sha256": "47375c4b88c2ebcc34942368be659fa0a9cc3e8ad6edde4b2dca04e3c2aa827e"
   },
   "extracted": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness/cruxes/intermediate_contrasts_2026-03-19T03-52-42.json",
+   "path": "<project>/Data/runs/march_madness/cruxes/intermediate_contrasts_2026-03-19T03-52-42.json",
    "sha256": "34d54734361b1ab02622a67d794543f8ab6a1162f70dc55871263e2fca5fb666"
   },
   "extracted_deduplicated_by_research_code": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
+   "path": "<project>/Data/runs/march_madness_objects59_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
    "sha256": "b3224151c1175f72e9dade92e9777ca14311d64ef90baf941093d4c2d0129081"
   },
   "question_list": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_dedup/apriori/set_inclusion_resolved_p1_pos_only_2026-09-23T17-35-08.json",
+   "path": "<project>/Data/runs/march_madness_objects59_dedup/apriori/set_inclusion_resolved_p1_pos_only_2026-09-23T17-35-08.json",
    "sha256": "9ccac3fcface43cf1b7cc49025b2380bcf8c7d446563de282729e02740b1f27d"
   },
   "ground_truth": {
-   "path": "/net/projects/veitch/forecast-cruxes/march_madness/ground_truth_full_2026.json",
+   "path": "<project>/march_madness/ground_truth_full_2026.json",
    "sha256": "5eed6f45345348dad2567a7c9b1f81aa39ad8a28310af897c632bee763447720"
   }
  },
@@ -137,7 +137,7 @@
      36
     ],
     "equal_to_research_code_pools": {
-     "path": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
+     "path": "<project>/Data/runs/march_madness_objects59_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
      "sha256": "b3224151c1175f72e9dade92e9777ca14311d64ef90baf941093d4c2d0129081"
     }
    },

@@ -22,6 +22,6 @@ from local checkouts, whose branch and commit every job prints first (see
 `common.sh`).
 
 Each job sources `common.sh` by its absolute path on the cluster
-(`/net/projects/veitch/forecast-cruxes/forecast-cruxes-verify/scripts/authors_cluster/common.sh`),
+(`<project>/forecast-cruxes-verify/scripts/authors_cluster/common.sh`),
 not relative to the job script, because `sbatch` runs a spooled copy of the
 script, so `$(dirname "$0")` does not point at this directory.

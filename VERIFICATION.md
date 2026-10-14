@@ -26,8 +26,8 @@ earlier run from the authors' 2026-09-24 score caches gave
 
 Generated 2026-10-09T00:11:08+00:00.
 
-- release: `/net/spaces/scratch/reber-scratch2/clean_verify_2026-10-08/RELEASE` (release)
-- expected numbers: `/net/spaces/scratch/reber-scratch2/clean_verify_2026-10-08/src/forecast-cruxes-verify/src/cruxes_verify/expected`
+- release: `<scratch>/clean_verify_2026-10-08/RELEASE` (release)
+- expected numbers: `<scratch>/clean_verify_2026-10-08/src/forecast-cruxes-verify/src/cruxes_verify/expected`
 - recorded scores: `RELEASE/provenance/scores`
 
 **Overall: PASSED** (109 of 109 gated checks passed).

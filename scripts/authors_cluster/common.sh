@@ -10,17 +10,17 @@
 # recorded scores, which are never part of the release; only the authors'
 # comparison reads them.
 
-source /net/projects/veitch/reber/miniconda3/etc/profile.d/conda.sh
+source <scratch>/miniconda3/etc/profile.d/conda.sh
 conda activate pycrux
 
-export PACKAGE_DIR=/net/projects/veitch/forecast-cruxes/cruxes-refactor-proposal-4/pkg
-export VERIFY_DIR=/net/projects/veitch/forecast-cruxes/forecast-cruxes-verify
-export VENV=/net/scratch2/reber/venvs/forecast_cruxes_proposal4
-export ARTIFACT=/net/projects/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_release
-export PROVENANCE=/net/projects/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_provenance
-export WORK=/net/projects/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run
+export PACKAGE_DIR=<project>/cruxes-refactor-proposal-4/pkg
+export VERIFY_DIR=<project>/forecast-cruxes-verify
+export VENV=<scratch>/venvs/forecast_cruxes_proposal4
+export ARTIFACT=<project>/Data/runs/refactor_proposal_4_release
+export PROVENANCE=<project>/Data/runs/refactor_proposal_4_provenance
+export WORK=<project>/Data/runs/refactor_proposal_4_verify_run
 
-export HF_HOME=/net/scratch2/reber/transformers_cache
+export HF_HOME=<scratch>/transformers_cache
 export HF_HUB_OFFLINE=1
 export PYTHONDONTWRITEBYTECODE=1
 

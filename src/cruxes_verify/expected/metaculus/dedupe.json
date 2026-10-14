@@ -191,7 +191,7 @@
   }
  },
  "source": {
-  "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/dedup_manifest.json",
+  "path": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/dedup_manifest.json",
   "sha256": "8ca4b032de32c60eea50712a4107411c711802d1703166f8bdaf9e381a94845b"
  }
 }

@@ -25,7 +25,7 @@ from pathlib import Path
 
 from legacy import convert_gather, sha256
 
-PROJECT = Path("/net/projects/veitch/forecast-cruxes")
+PROJECT = Path("<project>")
 RUNS = PROJECT / "Data" / "runs"
 DEFAULT_OUT = Path(__file__).resolve().parents[1] / "src" / "cruxes_verify" / "expected"
 

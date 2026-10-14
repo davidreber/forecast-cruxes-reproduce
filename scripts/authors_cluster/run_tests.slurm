@@ -8,13 +8,13 @@
 #SBATCH --time=01:00:00
 #SBATCH --exclude=m001,m002
 #SBATCH --kill-on-invalid-dep=yes
-#SBATCH --output=/net/projects/veitch/forecast-cruxes/slurm_logs/verify_tests_%j.out
-#SBATCH --error=/net/projects/veitch/forecast-cruxes/slurm_logs/verify_tests_%j.err
+#SBATCH --output=<project>/slurm_logs/verify_tests_%j.out
+#SBATCH --error=<project>/slurm_logs/verify_tests_%j.err
 #
 # Cost: $0. CPU only. Runs both test suites: the package's and this
 # repository's. Neither loads a model or reads Data/.
 
-source /net/projects/veitch/forecast-cruxes/forecast-cruxes-verify/scripts/authors_cluster/common.sh
+source <project>/forecast-cruxes-verify/scripts/authors_cluster/common.sh
 
 echo "== package tests"
 cd "${PACKAGE_DIR}"

@@ -1,6 +1,6 @@
 {
  "metadata": {
-  "converted_from": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/apriori/set_inclusion_all_p1_pos_only_2026-09-23T16-50-14.json",
+  "converted_from": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/apriori/set_inclusion_all_p1_pos_only_2026-09-23T16-50-14.json",
   "converted_from_sha256": "a09faaaf74f814832e1c3fea575d5ee208650cd055180bb19b97c1dd201b508e",
   "recorded_metadata": {
    "max_contrasts_per_side": 25,

@@ -23,31 +23,31 @@
  "noise_reference": "noise_reference/introspected.json is an independent second introspection sample under the same protocol (gpt-5.4, prompts 0 to 10, 55 calls, OpenAI batch batch_6ab45598ade08190be679c8aac52dd14); the verifier's tolerances are measured from runs on it",
  "provenance": {
   "introspected": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search/apriori/apriori_contrasts_2026-03-31T18-55-23.json",
+   "path": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search/apriori/apriori_contrasts_2026-03-31T18-55-23.json",
    "sha256": "633eec35e1aac64f14bcf3b73124e71f8c3bdb5deb72421fee899d7c7185efd5"
   },
   "introspection_metadata": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search/apriori/apriori_metadata_2026-03-31T18-55-23.json",
+   "path": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search/apriori/apriori_metadata_2026-03-31T18-55-23.json",
    "sha256": "a1c872f354239b4645d0e1f774f0674577c88b737956a582875e53dfbf90562e"
   },
   "introspected_noise_reference": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_rep2/apriori/apriori_contrasts_2026-09-23T17-53-03.json",
+   "path": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_rep2/apriori/apriori_contrasts_2026-09-23T17-53-03.json",
    "sha256": "49866d7bb8250cf081b3afe52a6df64f62596752eec63a56327a7d2a87b237cf"
   },
   "introspection_metadata_noise_reference": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_rep2/apriori/apriori_metadata_2026-09-23T17-53-03.json",
+   "path": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_rep2/apriori/apriori_metadata_2026-09-23T17-53-03.json",
    "sha256": "5d820d464aafb61f98acee45ed29468a8c76f2a2e9e10e650819621c100103ee"
   },
   "extracted": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search/cruxes/intermediate_contrasts_2026-03-31T16-34-41.json",
+   "path": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search/cruxes/intermediate_contrasts_2026-03-31T16-34-41.json",
    "sha256": "a952346c4ef92d08afd10711b5876fb351d96a70ed243826ee6fc59a36b8c8c1"
   },
   "extracted_deduplicated_by_research_code": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
+   "path": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
    "sha256": "106557f2d320f34e8ed817625089316bec578d0a264fe067b404b5e34c9b12b4"
   },
   "question_list": {
-   "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/apriori/set_inclusion_all_p1_pos_only_2026-09-23T16-50-14.json",
+   "path": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/apriori/set_inclusion_all_p1_pos_only_2026-09-23T16-50-14.json",
    "sha256": "a09faaaf74f814832e1c3fea575d5ee208650cd055180bb19b97c1dd201b508e"
   }
  },
@@ -89,7 +89,7 @@
      8
     ],
     "equal_to_research_code_pools": {
-     "path": "/net/projects/veitch/forecast-cruxes/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
+     "path": "<project>/Data/runs/02_28_26_gpt-5-nano_OpenAI-search_dedup/cruxes/intermediate_contrasts_dedup_2026-09-23T16-21-28.json",
      "sha256": "106557f2d320f34e8ed817625089316bec578d0a264fe067b404b5e34c9b12b4"
     }
    },

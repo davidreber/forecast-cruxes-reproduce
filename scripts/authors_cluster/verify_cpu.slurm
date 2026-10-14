@@ -8,8 +8,8 @@
 #SBATCH --time=04:00:00
 #SBATCH --exclude=m001,m002
 #SBATCH --kill-on-invalid-dep=yes
-#SBATCH --output=/net/projects/veitch/forecast-cruxes/slurm_logs/verify_cpu_%j.out
-#SBATCH --error=/net/projects/veitch/forecast-cruxes/slurm_logs/verify_cpu_%j.err
+#SBATCH --output=<project>/slurm_logs/verify_cpu_%j.out
+#SBATCH --error=<project>/slurm_logs/verify_cpu_%j.err
 #
 # Cost: $0. CPU only.
 #
@@ -22,7 +22,7 @@
 #
 # restricts report and compare to some runs (and skips the figures).
 
-source /net/projects/veitch/forecast-cruxes/forecast-cruxes-verify/scripts/authors_cluster/common.sh
+source <project>/forecast-cruxes-verify/scripts/authors_cluster/common.sh
 
 "${VENV}/bin/cruxes-verify" report --artifact "${ARTIFACT}" --work-dir "${WORK}" ${VERIFY_ARGS:-} || exit 1
 "${VENV}/bin/cruxes-verify" compare --artifact "${ARTIFACT}" --work-dir "${WORK}" --recorded-scores "${PROVENANCE}/scores" ${VERIFY_ARGS:-}

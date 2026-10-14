@@ -8,8 +8,8 @@
 #SBATCH --time=02:00:00
 #SBATCH --exclude=m001,m002
 #SBATCH --kill-on-invalid-dep=yes
-#SBATCH --output=/net/projects/veitch/forecast-cruxes/slurm_logs/verify_build_%j.out
-#SBATCH --error=/net/projects/veitch/forecast-cruxes/slurm_logs/verify_build_%j.err
+#SBATCH --output=<project>/slurm_logs/verify_build_%j.out
+#SBATCH --error=<project>/slurm_logs/verify_build_%j.err
 #
 # Cost: $0. CPU only, no model, no API.
 #
@@ -22,7 +22,7 @@
 #    repository into it, check the release's manifest, prepare the inputs and
 #    plan the GPU work.
 
-source /net/projects/veitch/forecast-cruxes/forecast-cruxes-verify/scripts/authors_cluster/common.sh
+source <project>/forecast-cruxes-verify/scripts/authors_cluster/common.sh
 set -eo pipefail
 
 cd "${VERIFY_DIR}"

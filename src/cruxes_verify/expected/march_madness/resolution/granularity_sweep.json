@@ -1,6 +1,6 @@
 {
  "metadata": {
-  "converted_from": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_dedup/apriori/granularity_sweep_resolved_p1_pos_only_2026-09-23T17-35-08.json",
+  "converted_from": "<project>/Data/runs/march_madness_objects59_dedup/apriori/granularity_sweep_resolved_p1_pos_only_2026-09-23T17-35-08.json",
   "converted_from_sha256": "fab09b07940b1a8dd6590ec055da2744c40b82b02a60bf55ca95e2ef686ed7bf",
   "recorded_metadata": {
    "analysis": "granularity_sweep",

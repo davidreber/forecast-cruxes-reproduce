@@ -1,6 +1,6 @@
 {
  "metadata": {
-  "converted_from": "/net/projects/veitch/forecast-cruxes/Data/runs/march_madness_objects59_rep2/apriori/set_inclusion_resolved_p1_pos_only_2026-09-22T14-17-32.json",
+  "converted_from": "<project>/Data/runs/march_madness_objects59_rep2/apriori/set_inclusion_resolved_p1_pos_only_2026-09-22T14-17-32.json",
   "converted_from_sha256": "e6fdbac9f25a0bd29c61ebd1fa116bacd0306f0f414f2aca7535364b02484c2f",
   "recorded_metadata": {
    "max_contrasts_per_side": 25,

@@ -125,7 +125,7 @@ baselines.
 
 ```
 pip install 'forecast-cruxes[gpu] @ git+https://github.com/davidreber/forecast-cruxes@v0.4.0'
-git clone https://github.com/davidreber/forecast-cruxes-verify && cd forecast-cruxes-verify && pip install -e .
+git clone https://github.com/davidreber/forecast-cruxes-reproduce && cd forecast-cruxes-reproduce && pip install -e .
 pip install -e '.[figures]'               # to redraw the paper's figures
 pip install -e '.[test]'                  # to run the tests
 ```

@@ -25,9 +25,9 @@ and an earlier one with 1,000 draws).
 
 Generated 2026-10-08T20:12:54+00:00.
 
-- release: `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_release` (development slice, not for release)
-- expected numbers: `/net/spaces/vveitch/veitch/forecast-cruxes/release_2026-10-08/forecast-cruxes-verify/src/cruxes_verify/expected`
-- recorded scores: `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_provenance/scores`
+- release: `<scratch>/forecast-cruxes/Data/runs/refactor_proposal_4_release` (development slice, not for release)
+- expected numbers: `<scratch>/forecast-cruxes/release_2026-10-08/forecast-cruxes-verify/src/cruxes_verify/expected`
+- recorded scores: `<scratch>/forecast-cruxes/Data/runs/refactor_proposal_4_provenance/scores`
 
 **Overall: PASSED** (109 of 109 gated checks passed).
 
@@ -45,7 +45,7 @@ Generated 2026-10-08T20:12:54+00:00.
 
 ## march_madness/resolution
 
-Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/march_madness/resolution/set_inclusion_2026-09-24T21-18-46Z.json`.
+Rerun report `<scratch>/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/march_madness/resolution/set_inclusion_2026-09-24T21-18-46Z.json`.
 
 | check | number | paper | rerun | difference | tolerance | |
 |---|---|---|---|---|---|---|
@@ -85,7 +85,7 @@ Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_prop
 
 ## march_madness/resolution@50
 
-Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/march_madness/resolution@50/set_inclusion_2026-09-24T21-19-52Z.json`.
+Rerun report `<scratch>/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/march_madness/resolution@50/set_inclusion_2026-09-24T21-19-52Z.json`.
 
 | check | number | paper | rerun | difference | tolerance | |
 |---|---|---|---|---|---|---|
@@ -117,7 +117,7 @@ Set inclusion of this run, reported without a verdict (the paper prints it only 
 
 ## march_madness/equivalence
 
-Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/march_madness/equivalence/set_inclusion_2026-09-24T21-20-47Z.json`.
+Rerun report `<scratch>/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/march_madness/equivalence/set_inclusion_2026-09-24T21-20-47Z.json`.
 
 | check | number | paper | rerun | difference | tolerance | |
 |---|---|---|---|---|---|---|
@@ -137,7 +137,7 @@ Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_prop
 
 ## march_madness/debate
 
-Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/march_madness/debate/set_inclusion_2026-09-24T21-21-08Z.json`.
+Rerun report `<scratch>/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/march_madness/debate/set_inclusion_2026-09-24T21-21-08Z.json`.
 
 | check | number | paper | rerun | difference | tolerance | |
 |---|---|---|---|---|---|---|
@@ -157,7 +157,7 @@ Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_prop
 
 ## metaculus/resolution
 
-Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/metaculus/resolution/set_inclusion_2026-09-24T21-21-12Z.json`.
+Rerun report `<scratch>/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/metaculus/resolution/set_inclusion_2026-09-24T21-21-12Z.json`.
 
 | check | number | paper | rerun | difference | tolerance | |
 |---|---|---|---|---|---|---|
@@ -177,7 +177,7 @@ Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_prop
 
 ## metaculus/equivalence
 
-Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/metaculus/equivalence/set_inclusion_2026-09-24T21-21-15Z.json`.
+Rerun report `<scratch>/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/metaculus/equivalence/set_inclusion_2026-09-24T21-21-15Z.json`.
 
 | check | number | paper | rerun | difference | tolerance | |
 |---|---|---|---|---|---|---|
@@ -197,7 +197,7 @@ Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_prop
 
 ## metaculus/debate
 
-Rerun report `/net/spaces/vveitch/veitch/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/metaculus/debate/set_inclusion_2026-09-24T21-21-18Z.json`.
+Rerun report `<scratch>/forecast-cruxes/Data/runs/refactor_proposal_4_verify_run/reports/metaculus/debate/set_inclusion_2026-09-24T21-21-18Z.json`.
 
 | check | number | paper | rerun | difference | tolerance | |
 |---|---|---|---|---|---|---|
