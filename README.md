@@ -1,7 +1,7 @@
 # forecast-cruxes-reproduce
 
-Data and verification for "Can LLMs Anticipate Their Cruxes?" by David Reber, James Reber, Ari
-Holtzman and Victor Veitch (University of Chicago). An arXiv preprint is forthcoming.
+Data and verification for "Can LLMs Anticipate Their Cruxes?" by David Reber, James Reber,
+Ari Holtzman and Victor Veitch (University of Chicago). An arXiv preprint is forthcoming.
 
 ## Start here
 
