@@ -1,7 +1,7 @@
 {
   "spec_version": 2,
   "release_status": "release",
-  "release_note": "Released 2026-10-08 from the build of 2026-09-24: the dataset files are unchanged; LICENSE, README.md, REDISTRIBUTION.md and provenance/ are listed alongside them. Two documentation strings were corrected after v1.0.0: the March Madness extractor is gpt-5.4-nano, as the run log and the paper record, not gpt-5.4-mini. No dataset file changed. Cluster filesystem prefixes were replaced with <project> and <scratch> placeholders on 2026-10-14 before the repository was made public; the listed hashes were recomputed to match and no dataset value changed.",
+  "release_note": "Released 2026-10-08 from the build of 2026-09-24: the dataset files are unchanged; LICENSE, README.md, REDISTRIBUTION.md and provenance/ are listed alongside them. Two documentation strings were corrected after v1.0.0: the March Madness extractor is gpt-5.4-nano, as the run log and the paper record, not gpt-5.4-mini. No dataset file changed. Internal filesystem prefixes were replaced with <project> and <scratch> placeholders on 2026-10-14 before the repository was made public; the listed hashes were recomputed to match and no dataset value changed.",
   "built": "2026-09-24T18:19:39+00:00",
   "builder": "forecast-cruxes-verify/artifact_builder/build_release.py",
   "internal_sources": {
@@ -31,8 +31,8 @@
       "role": "documentation"
     },
     "README.md": {
-      "sha256": "f48564b0ec58d3f8cd674d6675ab975b1f78826a4bdb8b7e85290ce276ddfc5f",
-      "bytes": 10043,
+      "sha256": "37e5c75ed1d64110d09c858c1114c61493f39443f91c923ea7f867ccdd0f53c9",
+      "bytes": 10068,
       "role": "documentation"
     },
     "REDISTRIBUTION.md": {
@@ -2971,8 +2971,8 @@
       "role": "method"
     },
     "provenance/README.md": {
-      "sha256": "1269dc2f93d292b8a761751e632a077ab126b5601bb8ade03a3a75128c2d5c0c",
-      "bytes": 1599,
+      "sha256": "1d92670917f7e15512a3ec9c943a350690a7f614be1dc9a1a9928189d1289cdb",
+      "bytes": 1585,
       "role": "provenance"
     },
     "provenance/scores/march_madness/debate/akron-vs-texas-tech.json": {

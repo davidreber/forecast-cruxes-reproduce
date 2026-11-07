@@ -3,8 +3,8 @@
 Data release for the paper "Can LLMs Anticipate Their Cruxes?" (David Reber,
 James Reber, Ari Holtzman, Victor Veitch; University of Chicago; arXiv preprint
 forthcoming). It holds every model output behind the paper's headline
-analyses: the forecasts, the scouting reports, the zero-shot (introspected)
-and many-shot (extracted) cruxes exactly as the models produced them, with
+analyses: the forecasts, the scouting reports, the a priori (introspected)
+and multiple-rollout (extracted) cruxes exactly as the models produced them, with
 repeats kept, the second introspection samples used as noise references, and
 the matching criteria.
 
@@ -12,10 +12,10 @@ Companion repositories:
 
 - the package, [forecast-cruxes](https://github.com/davidreber/forecast-cruxes)
   (import name `cruxes`, v0.4.0), which selects, scores and reports;
-- the verification, [forecast-cruxes-verify](https://github.com/davidreber/forecast-cruxes-verify)
-  (command `cruxes-verify`), which reruns the package on this release and
-  checks the result against the numbers the paper prints. Those numbers ship
-  with the verification repository, not here.
+- the verification, [forecast-cruxes-reproduce](https://github.com/davidreber/forecast-cruxes-reproduce)
+  (command `cruxes-verify`), which holds this release under `data/`, reruns the
+  package on it and checks the result against the numbers the paper prints.
+  Those numbers ship with the verification code, not in this directory.
 
 ## Scope
 
@@ -25,7 +25,7 @@ table, that is both datasets, all three strictness levels and 5 to 25 cruxes
 a side, plus the March Madness within-pool split (the run at 50 a side) and
 the March Madness coarser-cut sweep.
 
-It does not cover the appendix experiments: one-shot cruxes,
+It does not cover the appendix experiments: single-rollout cruxes,
 specificity/coarsening, evidence matching, the open-weight replication, the
 contested games, and the cross-model grid. Their inputs are not here.
 
@@ -59,9 +59,9 @@ Each dataset directory has:
   internal source of every file with its SHA-256, and the builder's checks
   (pool sizes, repeats removed).
 - `questions.json`: one record per question with its outcome and source.
-- `introspected.json`: the zero-shot cruxes, every premise as the model
+- `introspected.json`: the a priori cruxes, every premise as the model
   produced it, in recorded order, repeats kept.
-- `extracted.json`: the many-shot cruxes, likewise, repeats kept.
+- `extracted.json`: the multiple-rollout cruxes, likewise, repeats kept.
 - `noise_reference/introspected.json`: an independent second introspection
   sample with the same model, prompts and schema; the verifier's tolerances
   are measured from runs on it.
@@ -151,24 +151,23 @@ break the check.
 ## How to verify
 
 ```
-git clone https://github.com/davidreber/forecast-cruxes-data RELEASE
-pip install "forecast-cruxes[gpu] @ git+https://github.com/davidreber/forecast-cruxes"
-pip install "git+https://github.com/davidreber/forecast-cruxes-verify"
+pip install "forecast-cruxes[gpu] @ git+https://github.com/davidreber/forecast-cruxes@v0.4.0"
+git clone https://github.com/davidreber/forecast-cruxes-reproduce && cd forecast-cruxes-reproduce && pip install -e .
 
-cruxes-verify check --artifact RELEASE                     # manifest hashes only
-cruxes-verify all   --artifact RELEASE --work-dir WORK     # prepare, score, report, compare
+cruxes-verify check --artifact data                    # manifest hashes only
+cruxes-verify all   --artifact data --work-dir WORK    # prepare, score, report, compare
 ```
 
 `WORK` is an empty directory. The scoring stage runs the reranker and needs a
 CUDA GPU; `--array-task-id i --num-array-tasks n` splits it across jobs
-(see the verification repository's README). Adding `--recorded-scores RELEASE/provenance/scores` to `compare` (or
+(see the verification repository's README). Adding `--recorded-scores data/provenance/scores` to `compare` (or
 `all`) enables the raw-score check against the authors' recorded scores.
 
 ## MANIFEST.json
 
 Lists every file in the release with its SHA-256, size in bytes and role, and
 records `release_status`, the build time, the builder and the internal source
-paths the builder read (`internal_sources`, paths on the authors' cluster,
+paths the builder read (`internal_sources`, internal paths,
 kept for provenance). `cruxes-verify check` fails on any missing, changed or
 unlisted file.
 
@@ -177,8 +176,8 @@ unlisted file.
 | in the files | in the paper |
 |---|---|
 | premise | crux |
-| introspected | zero-shot cruxes (predicted) |
-| extracted | many-shot cruxes (discovered) |
+| introspected | a priori cruxes (predicted) |
+| extracted | multiple-rollout cruxes (discovered) |
 | noise reference | second introspection sample |
 | criterion `equivalence` | strict matching level |
 | criterion `resolution` | middle matching level ("moderate" in `matching_criteria.json`) |
@@ -197,6 +196,6 @@ terms described in [REDISTRIBUTION.md](REDISTRIBUTION.md).
   title  = {Can {LLMs} Anticipate Their Cruxes?},
   author = {Reber, David and Reber, James and Holtzman, Ari and Veitch, Victor},
   year   = {2026},
-  note   = {arXiv preprint forthcoming. Data: https://github.com/davidreber/forecast-cruxes-data}
+  note   = {arXiv preprint forthcoming. Data: https://github.com/davidreber/forecast-cruxes-reproduce}
 }
 ```

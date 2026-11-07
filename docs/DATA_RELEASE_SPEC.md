@@ -364,9 +364,7 @@ The release status is `release`.
 
 ## Contents (built 2026-09-24, released 2026-10-08)
 
-Built by `artifact_builder/build_release.py` from the authors' internal runs,
-through `scripts/authors_cluster/build_artifact.slurm` (output paths in
-`scripts/authors_cluster/common.sh`). Released on 2026-10-08 with the dataset
+Built by `artifact_builder/build_release.py` from the authors' internal runs. Released on 2026-10-08 with the dataset
 files unchanged from the build; the README and REDISTRIBUTION.md were
 rewritten by hand, and LICENSE and `provenance/` added.
 

@@ -551,7 +551,7 @@ def test_the_paper_figures_draw_from_the_shipped_expected_numbers(tmp_path):
 def test_no_verifier_module_knows_the_authors_layout():
     for path in SRC.rglob("*.py"):
         text = path.read_text(encoding="utf-8")
-        for forbidden in ("Data/runs", "/net/projects", "artifact_builder", "march_madness_objects59"):
+        for forbidden in ("Data/runs", "<project>", "artifact_builder", "march_madness_objects59"):
             assert forbidden not in text, f"{path.name} mentions {forbidden}"
 
 

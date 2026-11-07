@@ -1,7 +1,7 @@
 # artifact_builder: how the release and the expected numbers were derived
 
-Provenance only. These programs read the authors' internal runs on their
-cluster and cannot run anywhere else. They are kept so that a reader can audit
+Provenance only. These programs read the authors' internal runs
+and cannot run anywhere else. They are kept so that a reader can audit
 how the data release and the verifier's expected numbers were derived from
 those runs; nothing here is needed to verify the paper.
 
@@ -16,10 +16,8 @@ those runs; nothing here is needed to verify the paper.
 The internal files they read are recorded, each with its SHA-256, in
 `src/cruxes_verify/expected/SOURCES.json` (the expected numbers) and in the
 data release's `MANIFEST.json` under `internal_sources` (the release; each
-dataset's `dataset.json` lists them too). Those paths are on the authors'
-cluster and are not shipped.
+dataset's `dataset.json` lists them too). Those paths are internal
+and are not shipped.
 
 `cruxes-verify` never imports anything here, and a test asserts that no
-verifier module mentions these programs or any internal path. The Slurm job
-that ran `build_release.py` for the release is
-`scripts/authors_cluster/build_artifact.slurm`.
+verifier module mentions these programs or any internal path.

@@ -1,7 +1,7 @@
 <!-- Header added by the authors; the verdict below is the verifier's output, verbatim. -->
 
-**About this run.** The reranker scores (the GPU stage) were computed on the
-authors' cluster on 2026-09-24 with forecast-cruxes v0.4.0 on the data
+**About this run.** The reranker scores (the GPU stage) were computed by the
+authors on 2026-09-24 with forecast-cruxes v0.4.0 on the data
 release; the reports, comparison and verdict are from this repository at
 v0.1.0, with the paper's test at 10,000 draws and the gate p < 0.01. The
 release directory named below is the authors' copy of the data release: its

@@ -24,5 +24,5 @@ side, and `pos_fwd`, `pos_rev`, `neg_fwd`, `neg_rev` are the 50 by 50 score
 matrices over them. The texts were reconstructed with the research code's
 selection applied to the deduplicated pools, since the recorded caches store
 item ids only; the number of premises is checked against each cache. Each
-file's `provenance` names its cache (a path on the authors' cluster, not
+file's `provenance` names its cache (an internal path, not
 shipped) and the cache's SHA-256.

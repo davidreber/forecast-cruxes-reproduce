@@ -1,7 +1,6 @@
 <!-- Header added by the authors; the verdict below is the verifier's output, verbatim. -->
 
-**About this run.** A clean-install run of the public repositories, on the
-authors' Slurm cluster, 2026-10-08 to 09: a fresh Python 3.10 venv with
+**About this run.** A clean-install run of the public repositories, 2026-10-08 to 09: a fresh Python 3.10 venv with
 nothing of the authors' in it; `forecast-cruxes` 0.4.0 installed from its
 GitHub tag (`be27156`); this repository (`273f205`) and the data release
 (`740edc8`, tag v1.0.0) cloned from GitHub; torch 2.14.1+cu130 and
@@ -9,7 +8,7 @@ transformers 5.19.0 from PyPI; the reranker downloaded from the Hugging Face
 Hub at the pinned revision into a fresh cache; both test suites passed (190
 and 87); scoring on ten GPU jobs (four A100 80GB, three H100 NVL, three H200
 NVL; 33 minutes to 2 hours 40 minutes each); reports, comparison and verdict
-on a CPU job (12 minutes). The scripts are `scripts/clean_install/`. The data release used here
+on a CPU job (12 minutes). The data release used here
 now ships in this repository under `data/`, where two documentation strings have since been
 corrected to name the March Madness extractor gpt-5.4-nano, as the run log and the paper
 record. No dataset file and no recorded score changed, and the manifest was resealed.

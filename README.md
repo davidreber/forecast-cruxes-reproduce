@@ -55,7 +55,7 @@ shows whether the paper's numbers survive a rerun on hardware the authors never 
 the tolerances and the per-check table that produced it.
 
 **`artifact_builder/`** holds the tools that cut `data/` from the authors' internal runs. They
-cannot run elsewhere, and they stand as the audit trail from the cluster to the release.
+cannot run elsewhere, and they stand as the audit trail from the internal runs to the release.
 
 The two pictures below come from the paper and live in `figures/`.
 
