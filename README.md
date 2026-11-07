@@ -68,8 +68,8 @@ its forecasts actually disagreed on.
 
 ![Overlap against the permutation baseline, 1 to 25 cruxes a side](figures/stacked_area_merged.png)
 
-Naming more cruxes never closes the gap. Each panel stacks the clusters that hold zero-shot cruxes
-only (top, orange), many-shot cruxes only (middle, blue), and both kinds (bottom, green, the
+Naming more cruxes never closes the gap. Each panel stacks the clusters that hold a priori cruxes
+only (top, orange), multiple-rollout cruxes only (middle, blue), and both kinds (bottom, green, the
 overlap), for sets of 1 to 25 cruxes a side, with March Madness on the left and Metaculus on the
 right. The green band stays under the dashed permutation baseline at every set size, in both
 sources.
